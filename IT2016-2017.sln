@@ -3,9 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26228.4
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p1", "p1\p1.csproj", "{FB8E360A-2C4A-4C28-A710-82F99C18EE36}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "labs", "labs", "{4F7AD234-8D1F-4C6F-B397-522772EFCC75}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lab1", "lab1", "{05146DF4-5F77-4A91-8BD6-4E30A9EACE00}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lab2", "lab2", "{6F33A00D-07BF-49F9-834C-EBC606C276DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p1", "labs\lab1\p1\p1.csproj", "{75060A6C-5B6B-4220-BC74-A5184C6451A1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,15 +17,17 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{FB8E360A-2C4A-4C28-A710-82F99C18EE36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FB8E360A-2C4A-4C28-A710-82F99C18EE36}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FB8E360A-2C4A-4C28-A710-82F99C18EE36}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FB8E360A-2C4A-4C28-A710-82F99C18EE36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{75060A6C-5B6B-4220-BC74-A5184C6451A1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{75060A6C-5B6B-4220-BC74-A5184C6451A1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{75060A6C-5B6B-4220-BC74-A5184C6451A1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{75060A6C-5B6B-4220-BC74-A5184C6451A1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
-		{FB8E360A-2C4A-4C28-A710-82F99C18EE36} = {4F7AD234-8D1F-4C6F-B397-522772EFCC75}
+		{05146DF4-5F77-4A91-8BD6-4E30A9EACE00} = {4F7AD234-8D1F-4C6F-B397-522772EFCC75}
+		{6F33A00D-07BF-49F9-834C-EBC606C276DB} = {4F7AD234-8D1F-4C6F-B397-522772EFCC75}
+		{75060A6C-5B6B-4220-BC74-A5184C6451A1} = {05146DF4-5F77-4A91-8BD6-4E30A9EACE00}
 	EndGlobalSection
 EndGlobal
