@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26228.4
+VisualStudioVersion = 15.0.26228.9
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "labs", "labs", "{4F7AD234-8D1F-4C6F-B397-522772EFCC75}"
 EndProject
@@ -9,7 +9,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lab1", "lab1", "{05146DF4-5
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lab2", "lab2", "{6F33A00D-07BF-49F9-834C-EBC606C276DB}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "p1", "labs\lab1\p1\p1.csproj", "{60273A9C-AF19-4C55-A0BE-BCCF8B3EE99C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lab1.p1", "labs\lab1\p1\lab1.p1.csproj", "{60273A9C-AF19-4C55-A0BE-BCCF8B3EE99C}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lab3", "lab3", "{D404A51D-CA07-4300-944B-5387799A553B}"
 EndProject
