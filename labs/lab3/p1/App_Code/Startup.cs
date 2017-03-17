@@ -1,8 +1,8 @@
 ﻿using Microsoft.Owin;
 using Owin;
 
-[assembly: OwinStartupAttribute(typeof(p1.Startup))]
-namespace p1
+[assembly: OwinStartupAttribute(typeof(lab3.Startup))]
+namespace lab3
 {
     public partial class Startup {
         public void Configuration(IAppBuilder app) {

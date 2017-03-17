@@ -2,7 +2,7 @@
 using System;
 using System.Linq;
 using System.Web.UI;
-using p1;
+using lab3;
 
 public partial class Account_Register : Page
 {
