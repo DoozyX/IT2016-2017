@@ -3,98 +3,135 @@
 <asp:Content ID="BodyContent" ContentPlaceHolderID="MainContent" runat="server">
     <table class="nav-justified">
         <tr>
-            <td class="text-right" style="width: 69px; height: 22px">
+            <td class="text-right" style="width: 126px; height: 23px;">
                 <asp:Label ID="lblName" runat="server" Text="Име"></asp:Label>
             </td>
-            <td style="width: 203px; height: 22px">
-                <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
+            <td style="width: 249px; height: 23px">
+                <asp:TextBox ID="txtIme" runat="server"></asp:TextBox>
             </td>            
-            <td style="height: 22px"></td>
+            <td style="width: 791px; " rowspan="11">
+                <asp:Panel ID="pnlPanela" runat="server" Width="234px">
+                    Почитуван патнику<br />
+                    <asp:Label ID="lblPatnik" runat="server" EnableTheming="True" ForeColor="Red"></asp:Label>
+                    <br />
+                    Изведена ви е карта за<br />
+                    <asp:Label ID="lblSredstvo" runat="server"></asp:Label>
+                    <br />
+                    со почетна дестинација<br />
+                    <asp:Label ID="lblOd" runat="server"></asp:Label>
+                    <br />
+                    и крајна дестинација<br />
+                    <asp:Label ID="lblDo" runat="server"></asp:Label>
+                    <br />
+                    Време на поаѓање е
+                    <br />
+                    <asp:Label ID="lblVreme" runat="server"></asp:Label>
+                    <br />
+                    <br />
+                    Вашето место на седење ќе биде во зоната за
+                    <asp:Label ID="lblZona" runat="server"></asp:Label>
+                    &nbsp;во
+                    <asp:Label ID="lblKlasa" runat="server"></asp:Label>
+                    &nbsp;класа и во текот на патувањето ќе бидете послужени со
+                    <asp:Label ID="lblPosluga" runat="server"></asp:Label>
+                    <br />
+                    <asp:Image ID="imgSlika" runat="server" Height="200px" Width="223px" />
+                    <br />
+                    Ви благодариме на довербата и ви посакуваме среќен пат!</asp:Panel>
+            </td>            
         </tr>
         <tr>
-            <td class="text-right" style="width: 69px; height: 24px">
+            <td class="text-right" style="width: 126px; height: 24px;">
                 <asp:Label ID="lblSurname" runat="server" Text="Презиме"></asp:Label>
             </td>
-            <td style="height: 24px; width: 203px">
-                <asp:TextBox ID="TextBox2" runat="server"></asp:TextBox>
+            <td style="height: 24px; width: 249px">
+                <asp:TextBox ID="txtPrezime" runat="server"></asp:TextBox>
             </td>
         </tr>
         <tr>
-            <td class="text-right" style="width: 69px">
+            <td class="text-right" style="width: 126px">
                 <asp:Label ID="Label3" runat="server" Text="Од"></asp:Label>
             </td>
-            <td style="width: 203px">
-                <asp:DropDownList ID="DropDownList1" runat="server">
+            <td style="width: 249px; margin-left: 40px;">
+                <asp:DropDownList ID="ddlOd" runat="server">
                 </asp:DropDownList>
             </td>
         </tr>
         <tr>
-            <td class="text-right" style="width: 69px">
+            <td class="text-right" style="width: 126px;">
                 <asp:Label ID="Label4" runat="server" Text="До"></asp:Label>
             </td>
-            <td style="width: 203px">
-                <asp:DropDownList ID="DropDownList2" runat="server">
+            <td style="width: 249px">
+                <asp:DropDownList ID="ddlDo" runat="server">
                 </asp:DropDownList>
             </td>
         </tr>
         <tr>
-            <td class="text-right" style="width: 69px">
+            <td class="text-right" style="width: 126px;">
                 <asp:Label ID="Label5" runat="server" Text="Датум на Тргање"></asp:Label>
             </td>
-            <td style="width: 203px">
-                <asp:DropDownList ID="DropDownList3" runat="server">
+            <td style="width: 249px">
+                <asp:DropDownList ID="ddlDen" runat="server">
                 </asp:DropDownList>
-                <asp:DropDownList ID="DropDownList4" runat="server">
+                <asp:DropDownList ID="ddlMesec" runat="server">
                 </asp:DropDownList>
-                <asp:DropDownList ID="DropDownList5" runat="server">
+                <asp:DropDownList ID="ddlGodina" runat="server">
                 </asp:DropDownList>
             </td>
         </tr>
         <tr>
-            <td class="text-right" style="width: 69px">
+            <td class="text-right" style="width: 126px;">
                 <asp:Label ID="Label6" runat="server" Text="Време на тргање"></asp:Label>
             </td>
-            <td style="width: 203px">
-                <asp:DropDownList ID="DropDownList6" runat="server">
+            <td style="width: 249px">
+                <asp:DropDownList ID="ddlVreme" runat="server">
                 </asp:DropDownList>
             </td>
         </tr>
         <tr>
-            <td class="text-right" style="width: 69px">
+            <td class="text-right" style="width: 126px;">
                 <asp:Label ID="Label7" runat="server" Text="Превозно средство"></asp:Label>
             </td>
-            <td style="width: 203px">
-                <asp:TextBox ID="TextBox3" runat="server"></asp:TextBox>
+            <td style="width: 249px">
+                <asp:ListBox ID="lstSredstvo" runat="server">
+                    <asp:ListItem Value="Images/plane.png">Авион</asp:ListItem>
+                    <asp:ListItem Value="Images/train.jpg">Воз</asp:ListItem>
+                </asp:ListBox>
             </td>
         </tr>
         <tr>
-            <td class="text-right" style="width: 69px">Зона</td>
-            <td style="width: 203px">
-                <asp:RadioButton ID="RadioButton1" runat="server" OnCheckedChanged="RadioButton1_CheckedChanged" Text="Пушачи" />
-                <asp:RadioButton ID="RadioButton2" runat="server" Text="Непушачи" />
+            <td class="text-right" style="width: 126px;">Зона</td>
+            <td style="width: 249px">
+                <asp:RadioButtonList ID="rblZona" runat="server">
+                    <asp:ListItem>Пишачи</asp:ListItem>
+                    <asp:ListItem>Непушачи</asp:ListItem>
+                </asp:RadioButtonList>
             </td>
         </tr>
         <tr>
-            <td class="text-right" style="width: 69px">Класа</td>
-            <td style="width: 203px">
-                <asp:RadioButton ID="RadioButton3" runat="server" Text="Eкономска" />
-                <asp:RadioButton ID="RadioButton4" runat="server" Text="Бизнис" />
+            <td class="text-right" style="width: 126px;">Класа</td>
+            <td style="width: 249px">
+                <asp:RadioButtonList ID="rblKlasa" runat="server" RepeatDirection="Horizontal">
+                    <asp:ListItem>Економска</asp:ListItem>
+                    <asp:ListItem>Бизнис</asp:ListItem>
+                </asp:RadioButtonList>
             </td>
         </tr>
         <tr>
-            <td class="text-right" style="width: 69px">Послуга</td>
-            <td style="width: 203px">
-                <asp:CheckBox ID="CheckBox1" runat="server" Text="Пијалок" />
-                <asp:CheckBox ID="CheckBox2" runat="server" Text="Кафе" />
-                <asp:CheckBox ID="CheckBox3" runat="server" Text="Оброк" />
+            <td class="text-right" style="width: 126px;">Послуга</td>
+            <td style="width: 249px">
+                <asp:CheckBoxList ID="cblPosluga" runat="server" RepeatDirection="Horizontal">
+                    <asp:ListItem>Пијалок</asp:ListItem>
+                    <asp:ListItem>Кафе</asp:ListItem>
+                    <asp:ListItem>Оброк</asp:ListItem>
+                </asp:CheckBoxList>
             </td>
         </tr>
         <tr>
-            <td class="text-right" style="width: 69px">
-                <asp:Label ID="Label11" runat="server" Text="Label"></asp:Label>
-            </td>
-            <td style="width: 203px">
-                <asp:Button ID="Button1" runat="server" Text="Button" />
+            <td class="text-right" style="width: 126px;">
+                &nbsp;</td>
+            <td style="width: 249px">
+                <asp:Button ID="btnPodnesi" runat="server" Text="Поднеси" OnClick="btnPodnesi_Click" />
             </td>
         </tr>
     </table>

@@ -31,6 +31,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "p1(2)", "labs\lab3\p1\", "{
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "56499"
+		SlnRelativePath = "labs\lab3\p1\"
 	EndProjectSection
 EndProject
 Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "p2", "labs\lab3\p2\", "{F2118589-E333-4ACD-96A0-5BC1D5101890}"
@@ -51,6 +52,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "p2", "labs\lab3\p2\", "{F21
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "61991"
+		SlnRelativePath = "labs\lab3\p2\"
 	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "lab4", "lab4", "{710DC3F2-F728-4096-92BF-86342CE68CE0}"
@@ -73,6 +75,7 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "p1(4)", "labs\lab4\p1\", "{
 		Release.AspNetCompiler.FixedNames = "false"
 		Release.AspNetCompiler.Debug = "False"
 		VWDPort = "62176"
+		SlnRelativePath = "labs\lab4\p1\"
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
