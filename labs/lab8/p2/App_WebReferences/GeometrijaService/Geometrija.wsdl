@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="Plositna">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="h" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="r" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PlositnaResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="PlositnaResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="Volumen">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="h" type="s:double" />
+            <s:element minOccurs="1" maxOccurs="1" name="r" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="VolumenResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="VolumenResult" type="s:double" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SporediCilindri">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="cilindar1" type="tns:Cilindar" />
+            <s:element minOccurs="0" maxOccurs="1" name="cilindar2" type="tns:Cilindar" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="Cilindar">
+        <s:sequence>
+          <s:element minOccurs="1" maxOccurs="1" name="Height" type="s:double" />
+          <s:element minOccurs="1" maxOccurs="1" name="Radius" type="s:double" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="SporediCilindriResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SporediCilindriResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="PlositnaSoapIn">
+    <wsdl:part name="parameters" element="tns:Plositna" />
+  </wsdl:message>
+  <wsdl:message name="PlositnaSoapOut">
+    <wsdl:part name="parameters" element="tns:PlositnaResponse" />
+  </wsdl:message>
+  <wsdl:message name="VolumenSoapIn">
+    <wsdl:part name="parameters" element="tns:Volumen" />
+  </wsdl:message>
+  <wsdl:message name="VolumenSoapOut">
+    <wsdl:part name="parameters" element="tns:VolumenResponse" />
+  </wsdl:message>
+  <wsdl:message name="SporediCilindriSoapIn">
+    <wsdl:part name="parameters" element="tns:SporediCilindri" />
+  </wsdl:message>
+  <wsdl:message name="SporediCilindriSoapOut">
+    <wsdl:part name="parameters" element="tns:SporediCilindriResponse" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:portType name="GeometrijaSoap">
+    <wsdl:operation name="Plositna">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Ja vraka poslstnata za vnesena visiina i radius na cilindar.</wsdl:documentation>
+      <wsdl:input message="tns:PlositnaSoapIn" />
+      <wsdl:output message="tns:PlositnaSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="Volumen">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Go vraka volumenot za vnesena visiina i radius na cilindar.</wsdl:documentation>
+      <wsdl:input message="tns:VolumenSoapIn" />
+      <wsdl:output message="tns:VolumenSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SporediCilindri">
+      <wsdl:documentation xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">Vraka true dokolku cilindar1 e pogolem od cilindar2, false obratno.</wsdl:documentation>
+      <wsdl:input message="tns:SporediCilindriSoapIn" />
+      <wsdl:output message="tns:SporediCilindriSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="GeometrijaSoap" type="tns:GeometrijaSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Plositna">
+      <soap:operation soapAction="http://tempuri.org/Plositna" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Volumen">
+      <soap:operation soapAction="http://tempuri.org/Volumen" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SporediCilindri">
+      <soap:operation soapAction="http://tempuri.org/SporediCilindri" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="GeometrijaSoap12" type="tns:GeometrijaSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Plositna">
+      <soap12:operation soapAction="http://tempuri.org/Plositna" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Volumen">
+      <soap12:operation soapAction="http://tempuri.org/Volumen" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SporediCilindri">
+      <soap12:operation soapAction="http://tempuri.org/SporediCilindri" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Geometrija">
+    <wsdl:port name="GeometrijaSoap" binding="tns:GeometrijaSoap">
+      <soap:address location="http://localhost/Geometrija/Geometrija.asmx" />
+    </wsdl:port>
+    <wsdl:port name="GeometrijaSoap12" binding="tns:GeometrijaSoap12">
+      <soap12:address location="http://localhost/Geometrija/Geometrija.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>
