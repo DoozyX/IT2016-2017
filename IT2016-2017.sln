@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-VisualStudioVersion = 15.0.26403.7
+VisualStudioVersion = 15.0.26430.13
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "labs", "labs", "{4F7AD234-8D1F-4C6F-B397-522772EFCC75}"
 EndProject
@@ -196,6 +196,35 @@ Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "p2(1)", "labs\lab8\p2\", "{
 		DefaultWebSiteLanguage = "Visual C#"
 	EndProjectSection
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "exams", "exams", "{D18C9A02-D624-4DE1-A128-E0B39865DEF3}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "midterms", "midterms", "{01D65544-C557-418A-B0FF-B6600EA1193C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "first", "first", "{6E39DD6D-6576-4E47-8487-09E0318FB681}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "second", "second", "{E94E4C5D-28E5-4E25-BA17-44BD5AB49260}"
+EndProject
+Project("{E24C65DC-7377-472B-9ABA-BC803B73C61A}") = "p1(10)", "exams\midterms\second\p1\", "{3DBC9BB6-89C7-4DEA-A0AC-65C84876D02C}"
+	ProjectSection(WebsiteProperties) = preProject
+		TargetFrameworkMoniker = ".NETFramework,Version%3Dv4.6.2"
+		Debug.AspNetCompiler.VirtualPath = "/localhost_60238"
+		Debug.AspNetCompiler.PhysicalPath = "exams\midterms\second\p1\"
+		Debug.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60238\"
+		Debug.AspNetCompiler.Updateable = "true"
+		Debug.AspNetCompiler.ForceOverwrite = "true"
+		Debug.AspNetCompiler.FixedNames = "false"
+		Debug.AspNetCompiler.Debug = "True"
+		Release.AspNetCompiler.VirtualPath = "/localhost_60238"
+		Release.AspNetCompiler.PhysicalPath = "exams\midterms\second\p1\"
+		Release.AspNetCompiler.TargetPath = "PrecompiledWeb\localhost_60238\"
+		Release.AspNetCompiler.Updateable = "true"
+		Release.AspNetCompiler.ForceOverwrite = "true"
+		Release.AspNetCompiler.FixedNames = "false"
+		Release.AspNetCompiler.Debug = "False"
+		VWDPort = "60238"
+		DefaultWebSiteLanguage = "Visual C#"
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -238,6 +267,10 @@ Global
 		{F8F8A114-7EC5-4D8A-A0D6-F31290FA11E1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F8F8A114-7EC5-4D8A-A0D6-F31290FA11E1}.Release|Any CPU.ActiveCfg = Debug|Any CPU
 		{F8F8A114-7EC5-4D8A-A0D6-F31290FA11E1}.Release|Any CPU.Build.0 = Debug|Any CPU
+		{3DBC9BB6-89C7-4DEA-A0AC-65C84876D02C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DBC9BB6-89C7-4DEA-A0AC-65C84876D02C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3DBC9BB6-89C7-4DEA-A0AC-65C84876D02C}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{3DBC9BB6-89C7-4DEA-A0AC-65C84876D02C}.Release|Any CPU.Build.0 = Debug|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -260,5 +293,9 @@ Global
 		{22401AC6-2B04-42F7-B34F-9632B6F14FA2} = {4F7AD234-8D1F-4C6F-B397-522772EFCC75}
 		{0CB009E0-269F-4EBF-B6FB-37848A4611ED} = {22401AC6-2B04-42F7-B34F-9632B6F14FA2}
 		{F8F8A114-7EC5-4D8A-A0D6-F31290FA11E1} = {22401AC6-2B04-42F7-B34F-9632B6F14FA2}
+		{01D65544-C557-418A-B0FF-B6600EA1193C} = {D18C9A02-D624-4DE1-A128-E0B39865DEF3}
+		{6E39DD6D-6576-4E47-8487-09E0318FB681} = {01D65544-C557-418A-B0FF-B6600EA1193C}
+		{E94E4C5D-28E5-4E25-BA17-44BD5AB49260} = {01D65544-C557-418A-B0FF-B6600EA1193C}
+		{3DBC9BB6-89C7-4DEA-A0AC-65C84876D02C} = {E94E4C5D-28E5-4E25-BA17-44BD5AB49260}
 	EndGlobalSection
 EndGlobal
